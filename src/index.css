@@ -120,8 +120,14 @@ Questions
   overflow: hidden;
   color: #343951;
   border-radius: 5px;
-
+  filter: saturate(1);
+  cursor: pointer;
 }
+
+.container .right section:hover {
+  filter: saturate(3);
+}
+
 
 .container .right section .que {
   display: flex;
@@ -153,7 +159,7 @@ Questions
   rotate: 0deg;
 }
 
-.container .right section .que button:hover {
+.container .right section:hover .que button {
   rotate: 180deg;
 }
 

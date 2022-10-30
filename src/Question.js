@@ -29,12 +29,10 @@ const Question = ({ info, title }) => {
     }
   }, [show]);
   return (
-    <section style={style} ref={(e) => (questionSection = e)}>
+    <section onClick={change} style={style} ref={(e) => (questionSection = e)}>
       <div className="que">
         <h2>{title}</h2>
-        <button onClick={change}>
-          {show ? <AiOutlineMinus /> : <AiOutlinePlus />}
-        </button>
+        <button>{show ? <AiOutlineMinus /> : <AiOutlinePlus />}</button>
       </div>
       <div className="que">
         <p>{info}</p>
